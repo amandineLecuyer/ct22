@@ -263,3 +263,16 @@ if ( ! function_exists( 'hello_elementor_body_open' ) ) {
 		wp_body_open();
 	}
 }
+function enqueue_local_leaflet_js() {
+    wp_enqueue_style('leaflet-css', get_template_directory_uri() . '/assets/css/leaflet.css');
+    wp_enqueue_script('leaflet-js', get_template_directory_uri() . '/assets/js/leaflet.js', array(), null, true);
+}
+add_action('wp_enqueue_scripts', 'enqueue_local_leaflet_js');
+
+
+add_action('wp_enqueue_scripts', function(){
+    wp_enqueue_script('imgDef', get_stylesheet_directory_uri() .'/assets/js/imgDef.js', array(), '1', false);
+    wp_localize_script('imgDef', 'ImgDef', array(
+        'markerS' => get_template_directory_uri() .'/assets/images/markerS.png'
+    ));
+});

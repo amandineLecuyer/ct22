@@ -1,0 +1,51 @@
+<!-- start Simple Custom CSS and JS -->
+<style type="text/css">
+.clubTitre
+{
+		display:inline-block;
+		height:56px;
+}
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+}
+.footer
+{
+		height:40px;
+}
+.footer p
+{
+		height:10px;
+}
+body, html
+{
+		height:100%;
+}
+main
+{
+		min-height:calc(100% - 186px);
+}
+#navbar
+{
+		height:56px;
+}
+#titleSite
+{
+		height:90px;
+}
+#siteMap
+{
+		height: 500px; 
+		width: 100%;
+}
+.grecaptcha-badge { 
+visibility: hidden; 
+}
+#secteurCheck
+{
+	display:none;
+}
+</style>
+<!-- end Simple Custom CSS and JS -->
