@@ -73,7 +73,7 @@ class Cookie_Law_Info {
 		if ( defined( 'CLI_VERSION' ) ) {
 			$this->version = CLI_VERSION;
 		} else {
-			$this->version = '3.2.7';
+			$this->version = '3.2.8';
 		}
 		$this->plugin_name = 'cookie-law-info';
 
@@ -167,7 +167,7 @@ class Cookie_Law_Info {
 
 		$plugin_i18n = new Cookie_Law_Info_i18n();
 
-		$this->loader->add_action( 'plugins_loaded', $plugin_i18n, 'load_plugin_textdomain' );
+		$this->loader->add_action( 'init', $plugin_i18n, 'load_plugin_textdomain' );
 
 	}
 

@@ -1,15 +1,15 @@
 === CookieYes - Cookie Banner for Cookie Consent (Easy to setup GDPR/CCPA Compliant Cookie Notice) ===
 Contributors: webtoffee, cookieyesdev
 Donate link: https://www.cookieyes.com/ 
-Tags: GDPR, CCPA, cookie notice, DSGVO, cookie consent, cookie banner, eu cookie law, cookieyes, eprivacy, gdpr consent
+Tags: cookie notice, cookie consent, cookie banner, eu cookie law, cookieyes
 Requires at least: 5.0.0
-Tested up to: 6.6
+Tested up to: 6.7
 Requires PHP: 5.6
-Stable tag: 3.2.7
+Stable tag: 3.2.8
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-Easily set up cookie banner or cookie notice and cookie policy page for GDPR (DSGVO, RGPD) compliance. Also supports CCPA/CPRA and other major global laws.
+Easily set up cookie consent banner, notice, and policy pages for compliance with global cookie laws (GDPR, DSGVO, RGPD, CCPA/CPRA, etc).
 
 == Description ==
 
@@ -205,6 +205,12 @@ Every time we update the plugin, you will see a notification on the installed pl
 9. Privacy policy generator and cookie policy generator
 
 == Changelog ==
+
+= 3.2.8 =
+
+[Compatibility] – Tested OK with WordPress version 6.7
+[Add] - Support Custom name for dataLayer
+[Fix] - Minor bug fixes.
 
 = 3.2.7 =
 
@@ -726,9 +732,8 @@ Tested OK with WordPress version 6.2
 
 == Upgrade Notice ==
 
-= 3.2.7 =
+= 3.2.8 =
 
-[Add] - Implemented exit intent popup.
-[Tweak] - Declared compliance with WP Consent API.
-[Enhancement] - UI/UX improvements.
+[Compatibility] – Tested OK with WordPress version 6.7
+[Add] - Support Custom name for dataLayer
 [Fix] - Minor bug fixes.

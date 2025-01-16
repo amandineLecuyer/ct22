@@ -276,3 +276,7 @@ add_action('wp_enqueue_scripts', function(){
         'markerS' => get_template_directory_uri() .'/assets/images/markerS.png'
     ));
 });
+function wpb_sender_name( $original_email_from ) {
+    return "Comité Territorial d'escalade des Côtes d'Armor";
+}
+add_filter( 'wp_mail_from_name', 'wpb_sender_name' );
